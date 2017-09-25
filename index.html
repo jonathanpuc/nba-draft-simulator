@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+</head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="normalize.css">
+<link rel="stylesheet" href="bootstrap.min.css">
+<link rel="stylesheet" href="flex.css">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="welcome">
+        <h1> Thank you for visiting my NBA Draft Simulator! Please don't hesitate to provide some feedback, hit me up on Instagram at @jonathanpucc or Facebook me @jonathanpuc7. ENJOY!</h1>
+        <button id="init-btn" type="submit" onclick="appCtrl.init();"> PLAY </button>
+    </div>
+
+
+    <div id="app">
+        <div class="header">
+            <img id="logo" src="img/misc/logo.png">
+        </div>
+        <div id="board">
+            <div class="draft-column">
+                <div class="board-cell" id="cell1">
+                    <div class="pick-number">
+                        <p>1</p>
+                    </div>
+                    <div class="prospect-drafted" id="prospect-0"></div>
+                </div>
+                <div class="board-cell" id="cell2">
+                    <div class="pick-number">
+                        <p>2</p>
+                    </div>
+                    <div class="prospect-drafted" id="prospect-1"></div>
+                </div>
+                <div class="board-cell" id="cell3">
+                    <div class="pick-number">
+                        <p>3</p>
+                    </div>
+                    <div class="prospect-drafted" id="prospect-2"></div>
+                </div>
+                <div class="board-cell" id="cell4">
+                    <div class="pick-number">
+                        <p>4</p>
+                    </div>
+                    <div class="prospect-drafted" id="prospect-3"></div>
+                </div>
+                <div class="board-cell" id="cell5">
+                    <div class="pick-number">
+                        <p>5</p>
+                    </div>
+                    <div class="prospect-drafted" id="prospect-4"></div>
+                </div>
+                <div class="board-cell" id="cell6">
+                    <div class="pick-number">
+                        <p>6</p>
+                    </div>
+                    <div class="prospect-drafted" id="prospect-5"></div>
+                </div>
+                <div class="board-cell" id="cell7">
+                    <div class="pick-number">
+                        <p>7</p>
+                    </div>
+                    <div class="prospect-drafted" id="prospect-6"></div>
+                </div>
+                <div class="board-cell" id="cell8">
+                    <div class="pick-number">
+                        <p>8</p>
+                    </div>
+                    <div class="prospect-drafted" id="prospect-7"></div>
+                </div>
+                <div class="board-cell" id="cell9">
+                    <div class="pick-number">
+                        <p>9</p>
+                    </div>
+                    <div class="prospect-drafted" id="prospect-8"></div>
+                </div>
+                <div class="board-cell" id="cell10">
+                    <div class="pick-number">
+                        <p>10</p>
+                    </div>
+                    <div class="prospect-drafted" id="prospect-9"></div>
+                </div>
+                <div class="board-cell" id="cell11">
+                    <div class="pick-number">
+                        <p>11</p>
+                    </div>
+                    <div class="prospect-drafted" id="prospect-10"></div>
+                </div>
+                <div class="board-cell" id="cell12">
+                    <div class="pick-number">
+                        <p>12</p>
+                    </div>
+                    <div class="prospect-drafted" id="prospect-11"></div>
+                </div>
+                <div class="board-cell" id="cell13">
+                    <div class="pick-number">
+                        <p>13</p>
+                    </div>
+                    <div class="prospect-drafted" id="prospect-12"></div>
+                </div>
+                <div class="board-cell" id="cell14">
+                    <div class="pick-number">
+                        <p>14</p>
+                    </div>
+                    <div class="prospect-drafted" id="prospect-13"></div>
+                </div>
+                <div class="board-cell" id="cell15">
+                    <div class="pick-number">
+                        <p>15</p>
+                    </div>
+                    <div class="prospect-drafted" id="prospect-14"></div>
+                </div>
+                <div class="board-cell" id="cell16">
+                    <div class="pick-number">
+                        <p>16</p>
+                    </div>
+                    <div class="prospect-drafted" id="prospect-15"></div>
+                </div>
+                <div class="board-cell" id="cell17">
+                    <div class="pick-number">
+                        <p>17</p>
+                    </div>
+                    <div class="prospect-drafted" id="prospect-16"></div>
+                </div>
+                <div class="board-cell" id="cell18">
+                    <div class="pick-number">
+                        <p>18</p>
+                    </div>
+                    <div class="prospect-drafted" id="prospect-17"></div>
+                </div>
+                <div class="board-cell" id="cell19">
+                    <div class="pick-number">
+                        <p>19</p>
+                    </div>
+                    <div class="prospect-drafted" id="prospect-18"></div>
+                </div>
+                <div class="board-cell" id="cell20">
+                    <div class="pick-number">
+                        <p>20</p>
+                    </div>
+                    <div class="prospect-drafted" id="prospect-19"></div>
+                </div>
+                <div class="board-cell" id="cell21">
+                    <div class="pick-number">
+                        <p>21</p>
+                    </div>
+                    <div class="prospect-drafted" id="prospect-20"></div>
+                </div>
+                <div class="board-cell" id="cell22">
+                    <div class="pick-number">
+                        <p>22</p>
+                    </div>
+                    <div class="prospect-drafted" id="prospect-21"></div>
+                </div>
+                <div class="board-cell" id="cell23">
+                    <div class="pick-number">
+                        <p>23</p>
+                    </div>
+                    <div class="prospect-drafted" id="prospect-22"></div>
+                </div>
+                <div class="board-cell" id="cell24">
+                    <div class="pick-number">
+                        <p>24</p>
+                    </div>
+                    <div class="prospect-drafted" id="prospect-23"></div>
+                </div>
+                <div class="board-cell" id="cell25">
+                    <div class="pick-number">
+                        <p>25</p>
+                    </div>
+                    <div class="prospect-drafted" id="prospect-24"></div>
+                </div>
+                <div class="board-cell" id="cell26">
+                    <div class="pick-number">
+                        <p>26</p>
+                    </div>
+                    <div class="prospect-drafted" id="prospect-25"></div>
+                </div>
+                <div class="board-cell" id="cell27">
+                    <div class="pick-number">
+                        <p>27</p>
+                    </div>
+                    <div class="prospect-drafted" id="prospect-26"></div>
+                </div>
+                <div class="board-cell" id="cell28">
+                    <div class="pick-number">
+                        <p>28</p>
+                    </div>
+                    <div class="prospect-drafted" id="prospect-27"></div>
+                </div>
+                <div class="board-cell" id="cell29">
+                    <div class="pick-number">
+                        <p>29</p>
+                    </div>
+                    <div class="prospect-drafted" id="prospect-28"></div>
+                </div>
+                <div class="board-cell" id="cell30">
+                    <div class="pick-number">
+                        <p>30</p>
+                    </div>
+                    <div class="prospect-drafted" id="prospect-29"></div>
+                </div>
+            </div>
+
+        </div>
+        <div id="del-countdown">
+
+        </div>
+        <div id="currently-picking"> </div>
+        <div id="test"></div>
+
+        <div class="container" id="container">
+            <div id="profile-holder">
+            </div>
+        </div>
+
+        <div id="draft-list">
+            <img id="pos-logo" src="img/misc/guard.png">
+            <div class="draft-positions" id="guards">
+                <button type="submit" class="view-prospect" id="fultzmarkelle-btn"> Markelle Fultz </button>
+                <button type="submit" class="view-prospect" id="balllonzo-btn"> Lonzo Ball </button>
+                <button type="submit" class="view-prospect" id="smithdennis-btn"> Dennis Smith </button>
+                <button type="submit" class="view-prospect" id="fergusonterrance-btn"> Terrance Ferguson </button>
+                <button type="submit" class="view-prospect" id="ntilikinafrank-btn"> Frank Ntilikina </button>
+                <button type="submit" class="view-prospect" id="foxdeaaron-btn"> De'Aaron Fox </button>
+                <button type="submit" class="view-prospect" id="whitederrick-btn"> Derrick White </button>
+                <button type="submit" class="view-prospect" id="evansjawun-btn"> Jawun Evans </button>
+            </div>
+
+            <img id="pos-logo" src="img/misc/wing.png">
+            <div class="draft-positions" id="wings">
+                <button type="submit" class="view-prospect" id="jacksonjosh-btn"> Josh Jackson </button>
+                <button type="submit" class="view-prospect" id="tatumjayson-btn"> Jayson Tatum </button>
+                <button type="submit" class="view-prospect" id="isaacjonathan-btn"> Jonathan Isaac </button>
+                <button type="submit" class="view-prospect" id="monkmalik-btn"> Malik Monk </button>
+                <button type="submit" class="view-prospect" id="jacksonjustin-btn"> Justin Jackson </button>
+                <button type="submit" class="view-prospect" id="kennardluke-btn"> Luke Kennard </button>
+                <button type="submit" class="view-prospect" id="mitchelldonovan-btn"> Donovan Mitchell </button>
+                <button type="submit" class="view-prospect" id="anunobyog-btn"> OG Anunoby </button>
+                <button type="submit" class="view-prospect" id="lydontyler-btn"> Tyler Lydon </button>
+            </div>
+
+            <img id="pos-logo" src="img/misc/big.png">
+            <div class="draft-positions" id="bigs">
+                <button type="submit" class="view-prospect" id="leaftj-btn"> TJ Leaf </button>
+                <button type="submit" class="view-prospect" id="markkanenlauri-btn"> Lauri Markkanen </button>
+                <button type="submit" class="view-prospect" id="collinszach-btn"> Zach Collins </button>
+                <button type="submit" class="view-prospect" id="collinsjohn-btn"> John Collins </button>
+                <button type="submit" class="view-prospect" id="anigboguike-btn"> Ike Anigbogu </button>
+                <button type="submit" class="view-prospect" id="gilesharry-btn"> Harry Giles </button>
+                <button type="submit" class="view-prospect" id="hartensteinisaiah-btn"> Isaiah Hartenstein </button>
+                <button type="submit" class="view-prospect" id="ojeleyesemi-btn"> Semi Ojeleye </button>
+                <button type="submit" class="view-prospect" id="pasecniksanzejs-btn"> Anzejs Pasecniks </button>
+                <button type="submit" class="view-prospect" id="wilsondj-btn"> DJ Wilson </button>
+                <button type="submit" class="view-prospect" id="allenjarrett-btn"> Jarrett Allen </button>
+                <button type="submit" class="view-prospect" id="jeannejonathan-btn"> Jonathan Jeanne </button>
+                <button type="submit" class="view-prospect" id="pattonjustin-btn"> Justin Patton </button>
+                <button type="submit" class="view-prospect" id="adebayobam-btn"> Bam Adebayo </button>
+                <button type="submit" class="view-prospect" id="rabbivan-btn"> Ivan Rabb </button>
+                <button type="submit" class="view-prospect" id="kuzmakyle-btn"> Kyle Kuzma </button>
+                <button type="submit" class="view-prospect" id="bradleytony-btn"> Tony Bradley </button>
+                <button type="submit" class="view-prospect" id="lessortmathias-btn"> Mathias Lessort </button>
+                <button type="submit" class="view-prospect" id="belljordan-btn"> Jordan Bell </button>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>

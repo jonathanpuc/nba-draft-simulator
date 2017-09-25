@@ -1,0 +1,230 @@
+#app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#board {
+  order:3;
+}
+
+#container {
+  order:1;
+}
+
+#draft-list {
+  order:2;
+}
+/*********DRAFT BOARD*********/
+
+.draft-column {
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.board-cell {
+  flex:30%;
+  display:flex;
+  justify-content: flex-start;
+}
+
+.prospect-drafted {
+  display: flex;
+  flex-direction: row;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*********PROFILE*********/
+
+#profile-holder {
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.player-profile {
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#stats {
+  display:flex;
+  align-self: flex-start;
+  flex: 100%;
+  flex-wrap:wrap;
+  flex-direction: row;
+}
+
+.stat {
+  flex:25%;
+}
+
+.bio {
+  flex: 50%;
+  display:flex;
+  align-items: center;
+  flex-wrap:wrap;
+}
+
+.tile {
+  flex:15%;
+}
+
+
+.select {
+  flex:100%;
+  align-self: center;
+}
+
+#avatar-holder {
+  flex-grow:2;
+}
+
+/*********DRAFT-LIST*********/
+
+#draft-list {
+  display:flex;
+  flex-direction: column;
+}
+
+.draft-positions {
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.view-prospect {
+  flex:10%;
+}
+
+@media(min-width:768px) {
+
+  #board {
+    order:1;
+  }
+
+  #container {
+    order:2;
+  }
+
+  #draft-list {
+    order:3;
+  }
+
+  .draft-column {
+    display:flex;
+    flex-wrap:wrap;
+  }
+
+  .board-cell {
+    flex:14.333%;
+    display:flex;
+    justify-content: flex-start;
+  }
+
+#cell1 {
+  order:1;
+}
+#cell2 {
+  order:7;
+}#cell3 {
+  order:13;
+}#cell4 {
+  order:19;
+}#cell5 {
+  order:25;
+}#cell6 {
+  order:2;
+}#cell7 {
+  order:8;
+}#cell8 {
+  order:14;
+}#cell9 {
+  order:20;
+}#cell10 {
+  order:26;
+}#cell11 {
+  order:3;
+  }
+#cell12 {
+  order:9;
+}#cell13 {
+  order:15;
+}#cell14 {
+  order:21;
+}#cell15 {
+  order:27;
+}#cell16 {
+  order:4;
+}#cell17 {
+  order:10;
+}#cell18 {
+  order:16;
+}#cell19 {
+  order:22;
+}#cell20 {
+  order:27;
+}#cell21 {
+  order:5;
+}#cell22 {
+  order:11;
+}#cell23 {
+  order:17;
+}#cell24 {
+  order:23;
+}#cell25 {
+  order:28;
+}#cell26 {
+  order:6;
+}
+#cell27 {
+  order:12;
+}
+#cell28 {
+  order:18;
+}
+#cell29 {
+  order:24;
+}
+#cell30 {
+  order:30;
+}
+
+
+.player-profile {
+  flex:75%;
+}
+
+.avatar-holder {
+  flex:25%;
+}
+
+.stat {
+  flex:25%;
+  align-self: center;
+}
+
+
+}
+
+@media (min-width:1025px) {
+
+  body {
+    width:80%;
+  }
+
+  .container {
+    width:80%;
+  }
+
+}
